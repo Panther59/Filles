@@ -1,0 +1,14 @@
+{
+  "Version": 1,
+  "PreferredTestFrameworkName": "NUnit",
+  "PreferredMockFrameworkName": "FakeItEasy",
+  "FileNameTemplate": "$ClassName$Tests",
+  "CustomMockFieldDeclarationTemplate": "private $CustomMockClass$ mock$InterfaceMockName$;",
+  "CustomMockFieldInitializationTemplate": "this.mock$InterfaceMockName$ = new $CustomMockClass$();",
+  "CustomMockObjectReferenceTemplate": "this.mock$InterfaceMockName$",
+  "Templates": {
+    "NUnit_FakeItEasy_MockFieldDeclaration": "private Fake$InterfaceType$ fake$InterfaceType$;",
+    "NUnit_FakeItEasy_MockFieldInitialization": "this.fake$InterfaceType$ = new Fake$InterfaceType$();",
+    "NUnit_FakeItEasy_MockObjectReference": "this.fake$InterfaceType$.Subject"
+  }
+}
